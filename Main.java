@@ -31,18 +31,7 @@ class Main {
                 System.out.println(Multiplication());
                 break;
             case 4:
-                System.out.print("Enter number 1: ");
-                main.num1 = main.scanner.nextDouble();
-                System.out.print("Enter number 2: ");
-                main.num2 = main.scanner.nextDouble();
-                if (main.num2 != 0) {
-                    main.result = main.num1 / main.num2;
-                    System.out.print(main.num1 + " / " + main.num2 + " = ");
-                    System.out.println(main.result);
-                } else {
-                    System.out.println("Error: Division by zero.");
-                    System.exit(0);
-                }
+                System.out.println(Division());
                 break;
             case 5:
                 System.out.print("Enter the number you want squared: ");
@@ -119,5 +108,20 @@ class Main {
         main.num2 = main.scanner.nextDouble();
         main.result = main.num1 * main.num2;
         return main.num1 + " * " + main.num2 + " = " + main.result;
+    }
+
+    public static String Division() {
+        Main main = new Main();
+
+        System.out.print("Enter number 1: ");
+        main.num1 = main.scanner.nextDouble();
+        System.out.print("Enter number 2: ");
+        main.num2 = main.scanner.nextDouble();
+        if (main.num2 != 0) {
+            main.result = main.num1 / main.num2;
+            return main.num1 + " ÷ " + main.num2 + " = " + main.result;
+        } else {
+            return "Error: division by zero";
+        }
     }
 }
