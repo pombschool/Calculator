@@ -28,13 +28,7 @@ class Main {
                 System.out.println(Subtraction());
                 break;
             case 3:
-                System.out.print("Enter number 1: ");
-                main.num1 = main.scanner.nextDouble();
-                System.out.print("Enter number 2: ");
-                main.num2 = main.scanner.nextDouble();
-                main.result = main.num1 * main.num2;
-                System.out.print(main.num1 + " * " + main.num2 + " = ");
-                System.out.println(main.result);
+                System.out.println(Multiplication());
                 break;
             case 4:
                 System.out.print("Enter number 1: ");
@@ -114,5 +108,16 @@ class Main {
         main.num2 = main.scanner.nextDouble();
         main.result = main.num1 - main.num2;
         return main.num1 + " - " + main.num2 + " = " + main.result;
+    }
+
+    public static String Multiplication() {
+        Main main = new Main();
+
+        System.out.print("Enter number 1: ");
+        main.num1 = main.scanner.nextDouble();
+        System.out.print("Enter number 2: ");
+        main.num2 = main.scanner.nextDouble();
+        main.result = main.num1 * main.num2;
+        return main.num1 + " * " + main.num2 + " = " + main.result;
     }
 }
