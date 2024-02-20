@@ -25,14 +25,7 @@ class Main {
                 System.out.println(Addition());
                 break;
             case 2:
-                System.out.println("Enter numbers in the order you want to have it be calculated!!");
-                System.out.print("Enter number 1: ");
-                main.num1 = main.scanner.nextDouble();
-                System.out.print("Enter number 2: ");
-                main.num2 = main.scanner.nextDouble();
-                main.result = main.num1 - main.num2;
-                System.out.print(main.num1 + " - " + main.num2 + " = ");
-                System.out.println(main.result);
+                System.out.println(Subtraction());
                 break;
             case 3:
                 System.out.print("Enter number 1: ");
@@ -109,5 +102,17 @@ class Main {
         main.num2 = main.scanner.nextDouble();
         main.result = main.num1 + main.num2;
         return main.num1 + " + " + main.num2 + " = " + main.result;
+    }
+
+    public static String Subtraction() {
+        Main main = new Main();
+
+        System.out.println("Enter numbers in the order you want to have it be calculated!!");
+        System.out.print("Enter number 1: ");
+        main.num1 = main.scanner.nextDouble();
+        System.out.print("Enter number 2: ");
+        main.num2 = main.scanner.nextDouble();
+        main.result = main.num1 - main.num2;
+        return main.num1 + " - " + main.num2 + " = " + main.result;
     }
 }
