@@ -26,11 +26,24 @@ public class Main {
             System.out.print("Enter number 2: ");
             num2 = scanner.nextDouble();
             System.out.println(returnSum(num1, num2));
+            break;
+            case 2:
+            System.out.println("Enter the numbers in the order you want the operation to be carried out.");
+            System.out.print("Enter number 1: ");
+            num1 = scanner.nextDouble();
+            System.out.print("Enter number 2: ");
+            num2 = scanner.nextDouble();
+            System.out.println(returnDifference(num1, num2));
         }
     }
 
     public static String returnSum(double one, double two) {
         double result = one + two;
         return one + " + " + two + " = " + result;
+    }
+
+    public static String returnDifference(double one, double two) {
+        double result = one - two;
+        return one + " - " + two + " = " + result;
     }
 }
